@@ -1,0 +1,155 @@
+ @import "tailwindcss";
+
+/* =====================================
+   SMART MANDI AI - THEME CONFIGURATION
+===================================== */
+
+@theme {
+  --color-brand-50: #f0fdf4;
+  --color-brand-100: #dcfce7;
+  --color-brand-200: #bbf7d0;
+  --color-brand-300: #86efac;
+  --color-brand-400: #4ade80;
+  --color-brand-500: #22c55e;
+  --color-brand-600: #16a34a;
+  --color-brand-700: #15803d;
+  --color-brand-800: #166534;
+  --color-brand-900: #14532d;
+
+  --color-cream: #f8faf5;
+  --color-accent: #f59e0b;
+
+  --font-sans: "Inter", sans-serif;
+}
+
+/* =====================================
+   GLOBAL STYLES
+===================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f8faf5;
+  color: #1f2937;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =====================================
+   DARK THEME
+===================================== */
+
+.dark-theme body {
+  background-color: #0b1120;
+  color: #f9fafb;
+}
+
+/* Main page backgrounds */
+
+.dark-theme .min-h-screen {
+  background-color: #0b1120 !important;
+}
+
+/* White cards */
+
+.dark-theme .bg-white {
+  background-color: #172033 !important;
+}
+
+/* Light backgrounds */
+
+.dark-theme .bg-gray-50,
+.dark-theme .bg-gray-100 {
+  background-color: #1f2937 !important;
+}
+
+/* Text colors */
+
+.dark-theme .text-gray-900 {
+  color: #f9fafb !important;
+}
+
+.dark-theme .text-gray-800 {
+  color: #e5e7eb !important;
+}
+
+.dark-theme .text-gray-700 {
+  color: #d1d5db !important;
+}
+
+.dark-theme .text-gray-600 {
+  color: #cbd5e1 !important;
+}
+
+.dark-theme .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+/* Borders */
+
+.dark-theme .border-gray-100,
+.dark-theme .border-gray-200 {
+  border-color: #374151 !important;
+}
+
+/* Inputs */
+
+.dark-theme input,
+.dark-theme select,
+.dark-theme textarea {
+  background-color: #1f2937;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+.dark-theme input::placeholder,
+.dark-theme textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Tables */
+
+.dark-theme table {
+  color: #e5e7eb;
+}
+
+.dark-theme th {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.dark-theme td {
+  border-color: #374151;
+}
+
+/* Hover backgrounds */
+
+.dark-theme .hover\:bg-gray-50:hover {
+  background-color: #273449 !important;
+}
+
+/* Keep green buttons readable */
+
+.dark-theme .bg-green-700,
+.dark-theme .bg-green-600 {
+  color: #ffffff;
+}
+
+/* =====================================
+   END OF DARK THEME
+===================================== */
